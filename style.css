@@ -19,7 +19,7 @@
 .modal-content {
     width: 800px;
     position: absolute;
-    top: 50%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, 10%);
 }
@@ -43,11 +43,13 @@
 
 p {
     font-size: 32px;
+    text-align: center;
 }
 
 body {
     background-image: url("images/fiesta-background.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px;
 }
 
@@ -73,8 +75,12 @@ body {
     text-align: center;
     font-size: 40px;
     margin: 5px;
-    padding: 5px;
     color: white;
+    height: 90px;
+}
+
+a {
+    height: 100px;
 }
 
 #scoreboard {
@@ -84,6 +90,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    height: 175px;
+}
+
+.player-text {
+    margin-top: 30px;
 }
 
 a:hover {
