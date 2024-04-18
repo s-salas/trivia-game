@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="row" id="gameBoard"></div>
+
+      <h2 class="text-center" id="teamTurn"></h2>
+
+      <div class="text-center" id="scoreboard">
+        <h2>Scoreboard</h2>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="questionModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="questionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title text-center" id="questionModalLabel">
+              Question
+            </h2>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <div class="container" id="stopwatch-btns"> 
+              
+              <div id="buttons"> 
+                  <button id="start-btn" type="button"
+                  class="btn btn-primary"> 
+                      Start</button> 
+                  <button id="stop-btn" type="button" class="btn btn-danger"> 
+                      Stop</button> 
+                  <button id="reset-btn" type="button" class="btn btn-secondary"> 
+                      Reset</button> 
+              </div> 
+              <div id="stopwatch"> 
+                <span class="digit" id="sec"> 
+                    20</span> 
+               
+            </div> 
+          </div> 
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="hint-btn">
+              Hint
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="multiple-btn">
+              Multiple choice
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="answer-btn">
+              Answer
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="incorrect"
+              data-dismiss="modal"
+            >
+              None
+            </button>
+            <div id="player-btns">
+
+            <button type="button" class="btn btn-primary" id="player-1">
+              Eugene
+            </button>
+            <button type="button" class="btn btn-primary" id="player-2">
+              Evonn
+            </button>
+            <button type="button" class="btn btn-primary" id="player-3">
+              Kayla
+            </button>
+            <button type="button" class="btn btn-primary" id="player-4">
+              Lily
+            <button type="button" class="btn btn-primary" id="player-5">
+              Luis
+            <button type="button" class="btn btn-primary" id="player-6">
+              Mary
+            <button type="button" class="btn btn-primary" id="player-7">
+              Michael
+            <button type="button" class="btn btn-primary" id="player-8">
+              Patty
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
