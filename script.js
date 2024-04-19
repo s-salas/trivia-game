@@ -1,8 +1,8 @@
-const categories = ["Fiesta", "The Team", "Come Sail Away", "Taylor Swift Wrote A Song About Me", "Disney/Pixar", "Music Legends"];
+const categories = ["Fiesta", "The Team", "Come Sail Away", "Taylor Swift Wrote A Song About Me", "Category 5", "Music Legends"];
 const questions = [
   [
     // Fiesta
-    "What are Frosty the Snowman's eyes made of?", // Coal
+    "The oldest Fiesta event is the Battle of the ______ parade.", // Flowers
     "What does 'NIOSA' stand for?", // A Night In Old San Antonio
     "Who spies on naughty kids and reports them to Santa?", // Elf on the Shelf
     "Which reindeer shares a name with a household cleaner?", // Comet
@@ -53,7 +53,7 @@ const questions = [
 const answers = [
   [
     // Fiesta
-    "Answer 1",
+    "Flowers",
     "A Night In Old San Antonio",
     "Answer 3",
     "Answer 4",
@@ -104,7 +104,7 @@ const answers = [
 const hints = [
   [
     // Fiesta
-    "Hint 1",
+    "The plants are often used as gifts for various occasions",
     "Hint 2",
     "Hint 3",
     "Hint 4",
@@ -155,7 +155,7 @@ const hints = [
 const multipleChoice = [
   [
     // Fiesta
-    "A) text, B) text, C) text, D) text",
+    "A) Cactus, B) Fruit, C) Flowers, D) Palm trees",
     "A) text, B) text, C) text, D) text",
     "A) text, B) text, C) text, D) text",
     "A) text, B) text, C) text, D) text",
@@ -328,7 +328,7 @@ function setupBoard() {
 function setScoreboard() {
   $("#scoreboard").empty();
   players.forEach(function (player) {
-    let s = "<p>" + player[0] + ": " + player[1] + "</p>";
+    let s = "<p class='player-text'>" + player[0] + ": " + player[1] + "</p>";
     $("#scoreboard").append(s);
   });
 }
