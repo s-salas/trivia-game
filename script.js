@@ -1,52 +1,52 @@
-const categories = ["Fiesta", "The Team", "Come Sail Away", "Taylor Swift Wrote A Song About Me", "Category 5", "Music Legends"];
+const categories = ["Fiesta", "The Team", "Come Sail Away", "Taylor Swift Wrote A Song About Me", "Based On A Book", "Music Legends"];
 const questions = [
   [
     // Fiesta
     "The oldest Fiesta event is the Battle of the ______ parade.", // Flowers
     "What does 'NIOSA' stand for?", // A Night In Old San Antonio
-    "Who spies on naughty kids and reports them to Santa?", // Elf on the Shelf
-    "Which reindeer shares a name with a household cleaner?", // Comet
-    'This football (soccer) award given to The Best FIFA Men\'s Player is French for "Golden Ball."', // What is the Ballon d'Or?
+    "What collectible items are traded and worn during Fiesta to commemorate various events and organizations?", // Medals
+    "Since it began, the first year Fiesta wasn't held was in 1918 due to which event going on at the time?", // WW1
+    "Proceeds raised during Oyster Bake go directly to students at which university?", // St. Mary's University
   ],
   [
     // The Team
     "Eugene is a fan of which NFL Team?", // San Francisco 49ers
     "What's the name of Luis' dog?", // Rue
-    "In It's A Wonderful Life, what happens every time a bell rings?", // An angel gets its wings
-    "In the Christmas classic Die Hard, what's the name of the building that gets taken over by terrorists?", // Nakatomi Plaza
-    "What is Patty's all-time favorite movie?", // Fast Times at Ridgmont High
+    "What's the name of Shelby's older gray cat?", // Motley
+    "Evonn has two dogs. Name the breed for at least one of them.", // Daschund or Beagle
+    "How many sons does Michael have?", // One
   ],
   [
     // Come sail away
     "'You're gonna need a bigger boat' is a line from which movie?", // Jaws
     "Which country did Christopher Columbus set sail from before he came to America?", // Spain
+    "What's the name of Tom Hanks' volleyball friend in the movie 'Cast Away'?",
     "How many oceans are there in the world?", // Five
     "What's the name of the ship's captain in 20,000 Leagues Under the Sea?", // Captain Nemo
-    "2 to the 8th power", // What is 256?
   ],
   [
     // Taylor Swift
     "Which boy band is Harry Styles a former member of?", // One Direction
-    "Which rapper infamously interrupted Taylor's acceptance speech at the 2009 VMAs?", // What is Gucci?
-    "This is Weezy F. Baby's last name.", // What is Carter?
+    "Which rapper infamously interrupted Taylor's acceptance speech at the 2009 VMAs?", // Kanye West
+    "Who is believed to be the inspiration for the song 'Dear John'?", // John Mayer
     "Which well-known popstar's real name is Katheryn Hudson?", // Katy Perry
     "Actor Jake Gyllenhaal received his first and only Oscar nomination for his role in which movie?", // Brokeback Mountain?
   ],
   [
-    // Disney/Pixar
-    "Even miracles take a little time.", // Who is the Fairy Godmother from Cinderella?
-    "Ohana means family. Family means no one gets left behind.", // Who is Lilo from Lilo and Stitch?
-    "You're braver than you believe, and stronger than you seem, and smarter than you think.", // Who is Winnie the Pooh?
-    "The problem is not the problem. The problem is your attitude about the problem.", // Who is Jack Sparrow from Pirates of the Caribbean?
-    "You control your destiny -- you don't need magic to do it. And there are no magical shortcuts to solving your problems.", // Who is Merida from Brave?
+    // Based on a book
+    "What was the name of Michael Crichton's novel about dinosaurs and theme parks that later became a successful movie franchise?", // Jurassic Park
+    "Shakespeare's Hamlet heavily inspired the story for which animated Disney film?", // The Lion King
+    "'The Body' by Stephen King was adapted into which movie?", // Stand By Me
+    "Which 2014 movie involves a man that becomes the prime suspect in his wife's disappearance?", // Gone Girl
+    "Which movie tells the true story about the CIA operation to rescue six Americans during the Iran hostage crisis by pretending to be a Hollywood film crew?", // Argo
   ],
   [
     // Music Legends
-    "Even miracles take a little time.", // Who is the Fairy Godmother from Cinderella?
-    "Which rock guitarist played on Michael Jackson's song 'Beat It'?", // Who is Lilo from Lilo and Stitch?
-    "You're braver than you believe, and stronger than you seem, and smarter than you think.", // Who is Winnie the Pooh?
-    "The problem is not the problem. The problem is your attitude about the problem.", // Who is Jack Sparrow from Pirates of the Caribbean?
-    "You control your destiny -- you don't need magic to do it. And there are no magical shortcuts to solving your problems.", // Who is Merida from Brave?
+    "'Graceland' is a mansion in Memphis, TN that was once owned by which rock legend?", // Elvis Presley
+    "Which rock guitarist played on Michael Jackson's song 'Beat It'?", // Van Halen
+    "Which musician performed the Star Spangled Banner at Woodstock in 1969?", // Jimi Hendrix
+    "Who is the alien alter ego of David Bowie?", // Ziggy Stardust
+    "Which member of the Beatles wrote 'Here Comes The Sun'?", // George Harrison
   ],
 ];
 
@@ -55,100 +55,100 @@ const answers = [
     // Fiesta
     "Flowers",
     "A Night In Old San Antonio",
-    "Answer 3",
-    "Answer 4",
-    "Answer 5"
+    "Medals",
+    "World War 1",
+    "St. Mary's University"
   ],
   [
     // The Team
     "San Francisco 49ers",
     "Rue",
-    "Answer 3",
-    "Answer 4",
-    "Fast Times at Ridgmont High"
+    "Motley",
+    "Beagle and Dachshund",
+    "One"
   ],
   [
     // Come sail away
     "Jaws",
     "Spain",
+    "Wilson",
     "Five: Arctic, Atlantic, Indian, Pacific, and Southern (Antarctic)",
     "Captain Nemo",
-    "Answer 5"
   ],
   [
     // Taylor Swift
     "One Direction",
     "Kanye West",
-    "Answer 3",
+    "John Mayer",
     "Katy Perry",
     "Brokeback Mountain"
   ],
  [
-  // Category 5
-    "Answer 1",
-    "Answer 2",
-    "Answer 3",
-    "Answer 4",
-    "Answer 5"
+  // Based on a book
+    "Jurassic Park",
+    "The Lion King",
+    "Stand By Me",
+    "Gone Girl",
+    "Argo"
  ],
  [
   // Music legends
-    "Answer 1",
+    "Elvis Presley",
     "Eddie Van Halen",
-    "Answer 3",
-    "Answer 4",
-    "Answer 5"
+    "Jimi Hendrix",
+    "Ziggy Stardust",
+    "George Harrison"
  ],
 ]
 
 const hints = [
   [
     // Fiesta
-    "The plants are often used as gifts for various occasions",
-    "Hint 2",
-    "Hint 3",
-    "Hint 4",
-    "Hint 5"
+    "This is a plant that's often used as gifts for various occasions.",
+    "This event showcases the cultural HISTORY of San Antonio.",
+    "These items are used as accessories to showcase unique designs and themes.",
+    "This massive event resulted in conflict and catastrophe all over the world.",
+    "This university has the only law school in San Antonio."
   ],
   [
     // The Team
     "This team made an appearance in the Super Bowl this year.",
-    "Rhymes with 'Blue'",
-    "Hint 3",
-    "Hint 4",
-    "Hint 5"
+    "Rhymes with 'Blue.'",
+    "His name is a nod to a rock band.",
+    "They are both small breeds.",
+    "He has five kids in total with more girls than boys."
   ],
   [
     // Come sail away
     "This movie involves a shark.",
     "This country is located south of France.",
+    "The volleyball is named after the company it was made by.",
     "There are less oceans than there are continents.",
     "The captain shares a name with a certain underwater Pixar character.",
-    "Hint 5"
   ],
   [
     // Taylor Swift
     "This group became famous after appearing on The X Factor.",
     "He used to be married to a Kardashian.",
-    "Hint 3",
+    "This person has dated other famous women including Jessica Simpson and Jennifer Aniston.",
     "She once had a backup dancer that became an internet sensation known as 'Left Shark'.",
     "The movie also starred Heath Ledger."
   ],
   [
-    // category
-    "Hint 1",
-    "His band had the same name as him.",
-    "Hint 3",
-    "Hint 4",
-    "Hint 5"
+    // Based on a book
+    "The first movie was released in the 1990's and directed by Steven Spielberg.",
+    "In Hamlet, the main character sets out to avenge the death of his father.",
+    "Even though Stephen King is known for horror, this movie is actually considered a drama.",
+    "The book that the movie's based on was written by Gillian Flynn.",
+    "Ben Affleck directed and starred in the movie, which ended up winning several awards."
   ],
   [
     // Music legends
-    "Hint 1",
+    "This person was known as the King of Rock and Roll.",
     "His band had the same name as him.",
-    "Hint 3",
-    "Hint 4",
-    "Hint 5"
+    "This person is sometimes referred to as the 'Voodoo Child.'",
+    "This alter ego character is known for his lightning bolt makeup and glamorous outfits.",
+    "He was known as 'the quiet one'."
   ]
 ]
 
@@ -156,50 +156,50 @@ const multipleChoice = [
   [
     // Fiesta
     "A) Cactus, B) Fruit, C) Flowers, D) Palm trees",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text"
+    "A) Never-ending Indulgence of Salsa and Avocados, B) A Night in Old San Antonio, C) A Night in Overcrowded Street Assembly, D) Nonstop Intake of Snacks and Alcohol",
+    "A) Coins, B) Hats, C) Masks, D) Medals",
+    "A) The Black Plague, B) The Great Depression, C) World War I, D) World War II",
+    "A) Incarnate Word, B) Our Lady of the Lake, C) St. Mary's, D) Trinity"
   ],
   [
     // The Team
     "A) Dallas Cowboys, B) Kansas City Chiefs, C) Los Angeles Rams, D) San Francisco 49ers",
     "A) Drew, B) Lou, C) Rue, D) True",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text"
+    "A) Bono, B) Motley, C) Weezer, D) Zeppelin",
+    "A) Beagle, B) Daschund, C) Pomeranian, D) Shih Tzu",
+    "A) 0, B) 1, C) 2, D) 3"
   ],
   [
     // Come sail away
     "A) Deep Blue Sea, B) Jaws, C) Open Water, D) Sharknado",
     "A) Italy, B) Mexico, C) Portugal, D) Spain",
+    "A) Easton, B) Nike, C) Spalding, D) Wilson",
     "A) Three, B) Four, C) Five, D) Six",
     "A) Captain Dory, B) Captain Luca, C) Captain Marlin, D) Captain Nemo",
-    "A) text, B) text, C) text, D) text"
   ],
   [
     // Taylor Swift
     "A) Backstreet Boys, B) The Jonas Brothers, C) One Direction, D) The Wanted",
     "A) Drake, B) Jay Z, C) Kanye West, D) Travis Scott",
-    "A) text, B) text, C) text, D) text",
+    "A) Johnny Depp, B) John Legend, C) John Mayer, D) John Stamos",
     "A) Ariana Grande, B) Katy Perry, C) Lady Gaga, D) Pink",
     "A) Brokeback Mountain, B) Donnie Darko, C) Prisoners, D) Zodiac"
   ],
   [
-    // Category 5
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text"
+    // Based on a book
+    "A) Ice Age: Dawn of the Dinosaurs, B) Jurassic Park, C) The Land Before Time, D) Tammy and the T-Rex",
+    "A) Bambi, B) Finding Nemo, C) The Lion King, D) Mulan",
+    "A) Gerald's Game, B) Hearts in Atlantis, C) Shawshank Redemption, D) Stand By Me",
+    "A) Big Little Lies, B) The Girl on the Train, C) Gone Girl, D) The Lovely Bones",
+    "A) Argo, B) Black Hawk Down, C) Munich, D) Zero Dark Thirty"
   ], 
   [
     // Music Legends
-    "A) text, B) text, C) text, D) text",
+    "A) Bob Dylan, B) Elvis Presley, C) Jim Morrison, D) Kurt Cobain",
     "A) Alice Cooper, B) Bon Jovi, C) Tom Petty, D) Van Halen",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text",
-    "A) text, B) text, C) text, D) text"
+    "A) Eric Clapton, B) Kurt Cobain, C) Jimi Hendrix, D) Paul McCartney",
+    "A) Major Tom, B) Sgt. Pepper, C) Slim Shady, D) Ziggy Stardust",
+    "A) George Harrison, B) John Lennon, C) Paul McCartney, D) Ringo Starr"
   ],
 ]
 
@@ -382,7 +382,11 @@ $(document).ready(function () {
   $("#hint-btn").click(function () {
     let modal = $("#questionModal");
     let halfPoints = Math.floor(parseInt(points) / 2); // calculate half the points
-    modal.find(".modal-body p").text(hints[category][questionid]); // show hint
+    let questionText = (questions[category][questionid]); // get the question text
+    let hintText = hints[category][questionid]; // get hint text
+    let questionPara = $("<p>").text(questionText);
+    let hintPara = $("<p>").text("Hint: " + hintText);
+    modal.find(".modal-body p").empty().append(questionPara, hintPara); // show question and hint
     $("#hint-btn").hide(); // hide the hint button
     $("#answer-btn").show(); // show the answer button
     $("#multiple-btn").show(); // show the multiple choice button
@@ -392,12 +396,16 @@ $(document).ready(function () {
   $("#multiple-btn").click(function () {
     let modal = $("#questionModal");
     let quarterPoints = Math.floor(parseInt(points) / 2); // calculate quarter of the points
+    let questionText = (questions[category][questionid]); // get the question text
+    let hintText = hints[category][questionid]; // get hint text
+    let questionPara = $("<p>").text(questionText);
+    let hintPara = $("<p>").text("Hint: " + hintText);
     let choices = multipleChoice[category][questionid].split(', '); // split the multiple choices by comma and space
     let choicesHtml = ""; // initialize an empty string to store HTML for choices
     choices.forEach(choice => {
       choicesHtml += "<p>" + choice + "</p>"; // create paragraph element for each choice
     });
-    modal.find(".modal-body p").html(choicesHtml); // show multiple choices
+    modal.find(".modal-body p").empty().append(questionPara, hintPara, choicesHtml); // show multiple choices
     $("#multiple-btn").hide(); // hide the multiple choice button
     $("#answer-btn").show(); // show the answer button
     points = quarterPoints; // update points awarded to a quarter

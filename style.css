@@ -16,6 +16,11 @@
     font-size: 28px;
 }
 
+.hint-text {
+    color: black;
+    font-size: 28px;
+}
+
 .modal-content {
     width: 800px;
     position: absolute;
