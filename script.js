@@ -89,9 +89,23 @@ $(document).ready(function () {
 
   let timer;
   let milliseconds = 0;
-  let seconds;
+  let seconds = 20;
+  let currentPoints = 0; // Add this to track the current points
 
-  // Set up timer
+  // Function to reset the timer based on the current points
+  function resetTimer() {
+    if (currentPoints === 100 || currentPoints === 200) {
+      seconds = 10;
+    } else if (currentPoints === 300) {
+      seconds = 20;
+    } else if (currentPoints === 400 || currentPoints === 500) {
+      seconds = 30;
+    }
+    milliseconds = 0;
+    updateDisplay();
+  }
+
+  // Set up the timer
   startBtn.addEventListener("click", function () {
     if (!timer) {
       timer = setInterval(updateStopwatch, 10); // Update the stopwatch every 10 milliseconds
@@ -100,20 +114,17 @@ $(document).ready(function () {
 
   stopBtn.addEventListener("click", function () {
     clearInterval(timer);
-    timer = null;
+    timer = null; // Reset the timer variable
   });
 
   resetBtn.addEventListener("click", function () {
     clearInterval(timer);
     timer = null;
-    milliseconds = 0;
-    seconds = 20;
-    updateDisplay();
+    resetTimer(); // Call the resetTimer function
   });
 
   function updateStopwatch() {
     milliseconds -= 10;
-
     if (milliseconds < 0) {
       milliseconds = 990;
       seconds--;
@@ -131,7 +142,6 @@ $(document).ready(function () {
     let totalMilliseconds = seconds * 1000 + milliseconds;
     let remainingSeconds = Math.floor(totalMilliseconds / 1000);
     let remainingMilliseconds = totalMilliseconds % 1000;
-
     let remainingMillisecondsString = (remainingMilliseconds / 1000)
       .toFixed(2)
       .slice(2);
@@ -207,27 +217,17 @@ $(document).ready(function () {
 
   $("#questionModal").on("shown.bs.modal", function (event) {
     let link = $(event.relatedTarget);
-    let category = link.data("category");
-    let points = parseInt(link.data("points"));
-    let questionid = link.data("questionid");
+    category = link.data("category");
+    currentPoints = parseInt(link.data("points")); // Update current points
+    questionid = link.data("questionid");
 
     let modal = $(this);
     modal
       .find(".modal-title")
-      .text(categories[category] + " for " + points + " points");
+      .text(categories[category] + " for " + currentPoints + " points");
     modal.find(".modal-body p").text(questions[category][questionid]);
 
-    // set the timer based on points
-    if (points === 100 || points === 200) {
-      seconds = 10;
-    } else if (points === 300) {
-      seconds = 20;
-    } else if (points === 400 || points === 500) {
-      seconds = 30;
-    }
-    milliseconds = 0; // reset milliseconds
-
-    updateDisplay(); // update display with the new time
+    resetTimer(); // Call resetTimer to set the timer correctly
 
     $("#answer-btn").show(); // show the answer button
     $("#stopwatch-btns").show(); // show the stopwatch
@@ -246,24 +246,23 @@ $(document).ready(function () {
     $("#incorrect").show(); // show the incorrect button
   });
 
-  // modify player button click handlers to update score after answer is revealed
   $("#player-1").click(function () {
-    players[0][1] += parseInt(points);
+    players[0][1] += currentPoints;
     nextQuestion();
   });
 
   $("#player-2").click(function () {
-    players[1][1] += parseInt(points);
+    players[1][1] += currentPoints;
     nextQuestion();
   });
 
   $("#player-3").click(function () {
-    players[2][1] += parseInt(points);
+    players[2][1] += currentPoints;
     nextQuestion();
   });
 
   $("#player-4").click(function () {
-    players[3][1] += parseInt(points);
+    players[3][1] += currentPoints;
     nextQuestion();
   });
 
