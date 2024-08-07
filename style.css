@@ -3,21 +3,21 @@
 }
 
 .modal-header {
-    background-color: #7f73ff;
-    color: #ffffff;
+    background-color: white;
+    color: #a43f27;
 }
 
 .modal-body {
-    background-color: #14d0f0;
+    background-color: #C65237;
 }
 
 .modal-body p {
-    color: black;
+    color: #ffffff;
     font-size: 28px;
 }
 
 .hint-text {
-    color: black;
+    color: #ffffff;
     font-size: 28px;
 }
 
@@ -52,7 +52,7 @@ p {
 }
 
 body {
-    background-image: url("images/fiesta-background.jpg");
+    background-image: url("images/ai-generated-fall-leaves_23-2150648583.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px;
@@ -68,7 +68,7 @@ body {
 
 .card-header {
     padding: 30px 0px;
-    background-color: #ff2f81;
+    background-color: #585123;
     border: 1px solid white;
     margin: 2px;
     height: 200px;
@@ -76,7 +76,7 @@ body {
 }
 
 .list-group-item {
-    background-color: #11c300;
+    background-color: #f58549;
     text-align: center;
     font-size: 40px;
     margin: 5px;
@@ -89,13 +89,14 @@ a {
 }
 
 #scoreboard {
-    background: #14d0f0;
+    background: #772f1a;
     border-style: none;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     height: 150px;
+    color: white;
 }
 
 .player-text {
