@@ -51,6 +51,11 @@ p {
     text-align: center;
 }
 
+.subtitle-text {
+    font-size: 18px;
+    text-align: center;
+}
+
 body {
     background-image: url("images/ai-generated-fall-leaves_23-2150648583.jpg");
     background-size: cover;
