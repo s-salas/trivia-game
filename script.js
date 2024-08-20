@@ -34,7 +34,7 @@ const questions = [
   [
     "Which writing manager is the site lead for their location?", // Eugene
     "Which writing manager was recently featured on the Chase homepage?", // Antonio
-    "Which two writers presented information about the CKM Knowledge Library in the most recent CKM Town Hall?", // Amanda R and Amanda S
+    "Which two writers presented information about the CKM Knowledge Library in the CKM Town Hall?", // Amanda R and Amanda S
     "On what page can you find additional information on RDM interest groups?", // go/RDM
     "What are the six site locations where we have procedure writers?", // Columbus, Elgin, Mumbai, San Antonio, Tampa, Tempe
   ],
