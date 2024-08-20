@@ -24,11 +24,11 @@ const questions = [
   ],
   // CKM Procedures
   [
+    "What is the firm's style guide called?", // Voice of Chase
     "Which procedure tells you how to download and use the Link Automation Tool?", // Link Automation Tool procedure (106548)
-    "Which procedure serves as a guideline on standards for common key words, formatting and phrases when writing for Ops?", // Knowledge Management - Procedure Writers: KM writing standards - A to Z (39565)
+    "Which procedure serves as a style guide when writing?<br>Can answer with article for either Ops or CTO.", // Ops 39565 and CTO 73769
     "Which procedure provides details on how to create a PDF file for procedures with images?<br>Can answer with article for either Ops or CTO.", // Ops 101752 and CTO 106959
     "Which procedure provides details on how to republish a previous version of an article?<br>Can answer with article for either Ops or CTO.", // Ops 92605 and CTO 106959
-    "Which procedure serves as a style guide when writing CTO documents?", // answer
   ],
   // RDM Trivia
   [
@@ -59,11 +59,11 @@ const answers = [
   ],
   // Procedures
   [
+    "Voice of Chase",
     "Link Automation Tool procedure (106548)",
-    "Knowledge Management - Procedure Writers: KM writing standards - A to Z (39565)",
+    "<strong>Ops:</strong> Knowledge Management - Procedure Writers: KM writing standards - A to Z (39565)<br><strong>CTO:</strong> Operations Documentation Style Guide CTOR00703 (73769)",
     "<strong>Ops:</strong> CKM - Writing functions in Word and KB Admin (101752)<br><strong>CTO:</strong> CKM CTO Writing Functions in MS Word and KB Admin CTOS06905 (106959)",
     "<strong>Ops:</strong> CKM - Document writer role (92605)<br><strong>CTO:</strong> CKM CTO Writing Functions in MS Word and KB Admin CTOS06905 (106959)",
-    "Operations Documentation Style Guide CTOR00703 (73769)",
   ],
   // RDM Trivia
   [
